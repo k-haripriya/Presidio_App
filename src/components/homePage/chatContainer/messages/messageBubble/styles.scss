@@ -1,0 +1,23 @@
+.mesBubble{
+    
+    padding: 20px;
+    background-color: #dbd9e2;
+    width: fit-content;
+    margin: 10px;
+    border-radius: 20px;
+
+
+    p{
+        margin:2px;
+    }
+}
+
+.mesBubble.sent{
+    align-self: flex-end;
+
+}
+
+.mesBubble.received{
+    align-self: flex-start;
+    
+}
