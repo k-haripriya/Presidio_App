@@ -13,12 +13,16 @@
         width:70rem;
         height:3rem;
         border-radius: 10px;
-        border-color: whitesmoke;
+        border: solid rgba(157, 153, 153, 0.575);
     }
     .sendIcon{
         padding: 15px;
         background-color: #a799db;
         align-items: center;
         justify-content: center;
+    }
+
+    .sendIcon :active{
+        transform: scale(0.97);
     }
 }

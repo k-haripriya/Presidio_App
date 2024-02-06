@@ -18,16 +18,25 @@ function SignUpComponent(props) {
   const initialState = {
     Email: "",
     Password: "",
+    UserName:"",
   };
   const [getData, setData] = useState(initialState);
-  const fields = ["Email", "Password"];
+  let fields ;
+  if(getLogin)
+  {
+    fields=["Email","Password"];
+    
+  }
+  else{
+    fields=["Email","Password","UserName"];
+  }
   const handleTextInput = (field, newText) => {
     console.log({ ...getData, [field]: newText });
     setData({ ...getData, [field]: newText });
   };
 
   const handleSubmit = () => {
-    console.log("Button Clicked");
+    console.log("Button Clicked",getData);
     dispatch(adduser(getData));
     setData(initialState);
     toast("SuccessFully Created Your Account");

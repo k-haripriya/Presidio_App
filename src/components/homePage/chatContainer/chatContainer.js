@@ -21,8 +21,8 @@ function ChatContainer(props) {
     data ? (
       <div className="chatContainer">
         <Header data={data} />
-        <SendMessage />
-        <Messages />
+        <SendMessage getSelectedData={getSelectedData}/>
+        <Messages getSelectedData={getSelectedData}/>
       </div>
     ):(
       <div className="chatContainer">

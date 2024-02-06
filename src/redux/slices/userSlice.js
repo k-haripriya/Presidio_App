@@ -11,8 +11,10 @@ export const userSlice = createSlice ({
             const newuser = {
                Id:uuid(),
                email:action.payload.Email,
+               username: action.payload.UserName,
                pass:action.payload.Password,
             }
+            console.log("NewUser", newuser);
             state.push(newuser);
             
         },

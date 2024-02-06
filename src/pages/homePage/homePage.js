@@ -7,7 +7,7 @@ import { unstable_useViewTransitionState } from 'react-router-dom'
 import AddChannelModal from '../../components/homePage/AddChannelModal/AddChannelModal'
 
 function HomePage() {
-  const [getActiveCategory, setActiveCategory]= useState('Home');
+  const [getActiveCategory, setActiveCategory]= useState('Channels');
   const [ getSelectedData, setSelectedData ] = useState("");
   const [ getModal, setModal ] = useState(false);
   const handleOpenModal = () =>{
